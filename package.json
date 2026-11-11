@@ -1,0 +1,10 @@
+{
+  "name": "gizmohub-ph",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/hero.js --bundle --minify --format=iife --outfile=js/hero.js",
+    "start": "python3 -m http.server 8000"
+  },
+  "dependencies": { "three": "0.170.0" },
+  "devDependencies": { "esbuild": "^0.25.0" }
+}
