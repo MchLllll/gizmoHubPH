@@ -5,7 +5,7 @@
   --display:'Archivo','Arial Narrow',sans-serif; --mono:'Chivo Mono',ui-monospace,monospace;
   --shadow:4px 4px 0 var(--ink);
 }
-@media (min-width:760px){:root{--gutter:40px}}
+@media (min-width:760px){:root{--gutter:clamp(32px,4vw,72px)}}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -14,11 +14,11 @@ img,svg,canvas{display:block;max-width:100%}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--navy);outline-offset:3px}
 .dark :focus-visible,.band :focus-visible{outline-color:#fff}
-.wrap{width:min(1200px,100% - 2*var(--gutter));margin-inline:auto}
+.wrap{width:min(1560px,100% - 2*var(--gutter));margin-inline:auto}
 section{padding-block:clamp(64px,9vw,128px)}
 h1,h2,h3{word-spacing:.06em;font-weight:800;font-stretch:62%;text-transform:uppercase;letter-spacing:-.01em;line-height:.98;text-wrap:balance}
-h1{font-size:clamp(3rem,6.4vw,5.8rem)}
-h2{font-size:clamp(2.4rem,6vw,5rem)}
+h1{font-size:clamp(3rem,6.4vw,7rem)}
+h2{font-size:clamp(2.4rem,6vw,6rem)}
 h3{font-size:1.6rem;line-height:1.05}
 p{text-wrap:pretty;max-width:62ch}
 .mono,.tag{font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
